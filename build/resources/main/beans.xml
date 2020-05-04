@@ -8,9 +8,16 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config></context:annotation-config>
-    <bean id = "octopusHeart" class="com.bl.autowire.Heart"></bean>
-    <bean id = "heart" class="com.bl.autowire.Heart"></bean>
-    <bean id = "human" class="com.bl.autowire.Human">
 
+    <bean id = "humanHeart" class="com.bl.autowire.Heart">
+        <property name="nameOfAnimal" value="Human"></property>
+        <property name="numOfHeart" value="1"></property>
     </bean>
+
+    <bean id = "octopusHeart" class="com.bl.autowire.Heart">
+        <property name="nameOfAnimal" value="Octopus"></property>
+        <property name="numOfHeart" value="3"></property>
+    </bean>
+
+    <bean id="human" class="com.bl.autowire.Human"></bean>
 </beans>
