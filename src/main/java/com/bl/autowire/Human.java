@@ -1,5 +1,7 @@
 package com.bl.autowire;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Human {
 
     private Heart heart;
@@ -8,6 +10,11 @@ public class Human {
         this.heart = heart;
     }
 
+    public Human(){
+
+    }
+
+    @Autowired
     public Human(Heart heart) {
         this.heart = heart;
     }
