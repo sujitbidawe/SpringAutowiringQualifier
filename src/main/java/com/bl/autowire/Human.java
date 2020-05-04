@@ -8,6 +8,10 @@ public class Human {
         this.heart = heart;
     }
 
+    public Human(Heart heart) {
+        this.heart = heart;
+    }
+
     public void startPumping(){
         if (heart != null) {
             heart.pump();

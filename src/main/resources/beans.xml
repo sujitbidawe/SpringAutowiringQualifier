@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id = "heartobjectValue" class="com.bl.autowire.Heart"></bean>
-    <bean id = "human" class="com.bl.autowire.Human" autowire="byType">
+    <bean id = "human" class="com.bl.autowire.Human" autowire="constructor">
 
     </bean>
 </beans>
