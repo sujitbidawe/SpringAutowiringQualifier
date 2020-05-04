@@ -5,23 +5,23 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Human {
 
-    private Heart heart;
-
     @Autowired
     @Qualifier("humanHeart")
-    public void setHeart(Heart heart) {
-        this.heart = heart;
-        System.out.println("setter method called");
-    }
+    private Heart heart;
 
-    public Human(){
-
-    }
-
-    public Human(Heart heart) {
-        this.heart = heart;
-        System.out.println("human constructor is called which has heart as arg");
-    }
+//    public void setHeart(Heart heart) {
+//        this.heart = heart;
+//        System.out.println("setter method called");
+//    }
+//
+//    public Human(){
+//
+//    }
+//
+//    public Human(Heart heart) {
+//        this.heart = heart;
+//        System.out.println("human constructor is called which has heart as arg");
+//    }
 
     public void startPumping(){
         if (heart != null) {
