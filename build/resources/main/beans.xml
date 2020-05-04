@@ -8,7 +8,8 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config></context:annotation-config>
-    <bean id = "heartobjectValue" class="com.bl.autowire.Heart"></bean>
+    <bean id = "octopusHeart" class="com.bl.autowire.Heart"></bean>
+    <bean id = "heart" class="com.bl.autowire.Heart"></bean>
     <bean id = "human" class="com.bl.autowire.Human">
 
     </bean>
