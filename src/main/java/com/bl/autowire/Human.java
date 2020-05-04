@@ -6,6 +6,7 @@ public class Human {
 
     private Heart heart;
 
+    @Autowired
     public void setHeart(Heart heart) {
         this.heart = heart;
     }
@@ -14,7 +15,6 @@ public class Human {
 
     }
 
-    @Autowired
     public Human(Heart heart) {
         this.heart = heart;
     }
