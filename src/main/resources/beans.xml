@@ -3,8 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id = "heart" class="com.bl.autowire.Heart"></bean>
-    <bean id = "human" class="com.bl.autowire.Human" autowire="byName">
+    <bean id = "heartobjectValue" class="com.bl.autowire.Heart"></bean>
+    <bean id = "human" class="com.bl.autowire.Human" autowire="byType">
 
     </bean>
 </beans>
